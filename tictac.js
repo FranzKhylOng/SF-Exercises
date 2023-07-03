@@ -37,7 +37,7 @@ const playerWin = () => {
 const placeLocation = (loc) => {
     let marker = currentPlayer === 1 ? 'X' : 'O';
     var row = Math.floor(loc / 3); // divide by number of columns
-    var col = loc % 3; //modulo by number of rows
+    var col = loc % 3; //modulo by number of columns
 
     if (loc >= 0 && loc < 9 && playerBoard[row][col] === "-"){
         playerBoard[row][col] = marker;
